@@ -1,7 +1,7 @@
 """
 stringjumble.py
-Author: <your name>
-Credit: <sources>
+Author: James Napier    
+Credit: http://stackoverflow.com/questions/12794141/reverse-input-in-python, http://stackoverflow.com/questions/25375794/how-to-reverse-the-order-of-letters-in-a-string-in-python, http://stackoverflow.com/questions/25375794/how-to-reverse-the-order-of-letters-in-a-string-in-python
 
 Assignment:
 
@@ -25,3 +25,13 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
+
+JumbleString = input('Please enter a string of text (the bigger the better): ')
+print('You entered "'+JumbleString+'". Now Jumble it:')
+
+#This is the code for the first input line
+print(JumbleString[::-1])
+#This is the code for the second output line
+print(' '.join(reversed(JumbleString.split(' '))))
+#This is the code for the third output line
+print(' '.join(w[::-1] for w in JumbleString.split()))
