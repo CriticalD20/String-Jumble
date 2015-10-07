@@ -27,7 +27,7 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
 
 JumbleString = input('Please enter a string of text (the bigger the better): ')
-print('You entered "'+JumbleString+'". Now Jumble it:')
+print('You entered "'+JumbleString+'". Now jumble it:')
 
 #This is the code for the first input line
 print(JumbleString[::-1])
